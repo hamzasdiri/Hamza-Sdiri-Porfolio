@@ -20,6 +20,20 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import antdesign from "./tech/antdesign.png";
+import bootstrap from "./tech/bootstrap.png";
+import cplusplus from "./tech/cplusplus.png";
+import dart from "./tech/dart.png";
+import express from "./tech/express.png";
+import fastapi from "./tech/fastapi.png";
+import flutter from "./tech/flutter.png";
+import materialui from "./tech/materialui.png";
+import mysql from "./tech/mysql.png";
+import next from "./tech/next.png";
+import postgresql from "./tech/postgresql.png";
+import python from "./tech/python.png";
+import sailsjs from "./tech/sailsjs.png";
+import vuejs from "./tech/vuejs.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -64,4 +78,18 @@ export {
   water_sec_logo,
   unty_logo,
   aimino_logo,
+  antdesign,
+  bootstrap,
+  cplusplus,
+  dart,
+  express,
+  fastapi,
+  flutter,
+  materialui,
+  mysql,
+  next,
+  postgresql,
+  python,
+  sailsjs,
+  vuejs,
 };

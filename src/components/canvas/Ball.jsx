@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import {
   Decal,
@@ -38,20 +38,38 @@ const Ball = (props) => {
 };
 
 const BallCanvas = ({ icon }) => {
+  let canvasRef = null;
+
+  useEffect(() => {
+    return () => {
+      console.log("Cleaning up canvasRef", canvasRef);
+      if (canvasRef) {
+        const gl = canvasRef.getContext("webgl");
+        if (gl) {
+          const loseContext = gl.getExtension("WEBGL_lose_context");
+          if (loseContext) loseContext.loseContext();
+        }
+      }
+    };
+  }, []);
+
   return (
     <Canvas
-      frameloop='demand'
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
+      onCreated={({ gl }) => {
+        canvasRef = gl.domElement;
+      }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} />
         <Ball imgUrl={icon} />
       </Suspense>
-
       <Preload all />
     </Canvas>
   );
 };
+
+
 
 export default BallCanvas;

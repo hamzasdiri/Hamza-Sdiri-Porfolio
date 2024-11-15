@@ -1,7 +1,20 @@
 import {
   mobile,
   backend,
-  creator,
+  antdesign,
+  bootstrap,
+  cplusplus,
+  dart,
+  express,
+  fastapi,
+  flutter,
+  materialui,
+  mysql,
+  next,
+  postgresql,
+  python,
+  sailsjs,
+  vuejs,
   web,
   javascript,
   typescript,
@@ -58,60 +71,39 @@ const services = [
   }
 ];
 
-const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
-];
+const technologies = {
+  ProgrammingLanguages: [
+    { name: "C++", icon: cplusplus },
+    { name: "TypeScript", icon: typescript },
+    { name: "JavaScript", icon: javascript },
+    { name: "Python", icon: python },
+    { name: "Dart", icon: dart },
+  ],
+  WebDevelopment: [
+    { name: "HTML 5", icon: html },
+    { name: "CSS 3", icon: css },
+    { name: "Bootstrap", icon: bootstrap },
+    { name: "Tailwind CSS", icon: tailwind },
+    { name: "Material UI", icon: materialui },
+    { name: "Ant Design", icon: antdesign },
+  ],
+  Frameworks: [
+    { name: "React JS", icon: reactjs },
+    { name: "Next JS", icon: next },
+    { name: "Vue JS", icon: vuejs },
+    { name: "Node JS", icon: nodejs },
+    { name: "Express JS", icon: express },
+    { name: "Sails JS", icon: sailsjs },
+    { name: "FastAPI", icon: fastapi },
+    { name: "Flutter", icon: flutter },
+  ],
+  Databases: [
+    { name: "My SQL", icon: mysql },
+    { name: "MongoDB", icon: mongodb },
+    { name: "PostgreSQL", icon: postgresql },
+  ],
+};
+
 
 const experiences = [
   {
